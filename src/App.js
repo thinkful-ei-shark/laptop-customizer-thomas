@@ -1,9 +1,55 @@
+/*****************Thomas Wallace***********
+ * 
+ *  The main App Components will contain three Components   
+ *  Header - MainSelection (left side of screen) - MainResults - (right side of screen)
+ * 
+ *  MainSelection component will contain 4 instances of a ProductCard Component
+ *  The ProductCard components will each contain 2 instances of ProductSelection Component
+ * 
+ *  MainResults Components will contain 4 instances of a ProductSelectionDisplay Component 
+ *  and one instance of a Total Component
+ * 
+ * 
+ * 
+ *    <App />
+ *      <Header />
+ *      <MainSelection />
+ *            <ProductCard />
+ *                  <ProductSelection />
+ *                  <ProductSelection />
+ *            <ProductCard />
+ *                  <ProductSelection />
+ *                  <ProductSelection />
+ *             <ProductCard />
+ *
+ *                    <ProductSelection />
+ *                <ProductSelection />
+ *             <ProductCard />
+ *
+ * 
+ *         <MainResults />
+ *                   <ProductSelectionDisplay />
+ *                   <ProductSelectionDisplay />
+ *                    <ProductSelectionDisplay />
+ *                 <ProductSelectionDisplay />
+ *
+ *                  <Total />
+ ********************************************************/
+
+
+
+
+
+
+
+
 import React, { Component } from 'react';
+import Header from './Header.js'
 
 // Normalizes string as a slug - a string that is safe to use
 // in both URLs and html attributes
 import slugify from 'slugify';
-
+// styles
 import './App.css';
 
 // This object will allow us to
@@ -97,9 +143,10 @@ class App extends Component {
 
     return (
       <div className="App">
-        <header>
+        {/* <header>
           <h1>ELF Computing | Laptops</h1>
-        </header>
+        </header> */}
+        <Header />
         <main>
           <form className="main__form">
             <h2>Customize your laptop</h2>
