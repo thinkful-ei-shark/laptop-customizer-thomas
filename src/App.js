@@ -1,37 +1,37 @@
 /*****************Thomas Wallace***********
  * 
  *  The main App Components will contain three Components   
- *  Header - MainSelection (left side of screen) - MainResults - (right side of screen)
+ *  Header - MainSelection (left side of screen) - CartList - (right side of screen)
  * 
  *  MainSelection component will contain 4 instances of a ProductCard Component
- *  The ProductCard components will each contain 2 instances of ProductSelection Component
+ *  The ProductCard components will each contain 2 instances of Product Component
  * 
- *  MainResults Components will contain 4 instances of a ProductSelectionDisplay Component 
+ *  CartList Components will contain 4 instances of a CartItem Component 
  *  and one instance of a Total Component
  * 
  * 
+ *    Structured as follows:
  * 
  *    <App />
  *      <Header />
  *      <MainSelection />
  *            <ProductCard />
- *                  <ProductSelection />
- *                  <ProductSelection />
+ *                  <Product />
+ *                  <Product />
  *            <ProductCard />
- *                  <ProductSelection />
- *                  <ProductSelection />
+ *                  <Product />
+ *                  <Product />
  *             <ProductCard />
- *
- *                    <ProductSelection />
- *                <ProductSelection />
+ *                    <Product />
+ *                    <Product />
  *             <ProductCard />
  *
  * 
- *         <MainResults />
- *                   <ProductSelectionDisplay />
- *                   <ProductSelectionDisplay />
- *                    <ProductSelectionDisplay />
- *                 <ProductSelectionDisplay />
+ *         <CartList />
+ *                   <CartItem />
+ *                   <CartItem />
+ *                   <CartItem />
+ *                   <CartItem />
  *
  *                  <Total />
  ********************************************************/
